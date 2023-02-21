@@ -1,0 +1,405 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* start top  */
+.top {
+    background-color: rgb(18, 115, 212);
+    padding-top: 10px;
+}
+.top .container .top-line span {
+  color: white;
+  font-size: 13px;
+}
+
+.top .container .top-line i {
+  color: white;
+  font-size: 13px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.top .container .top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .container .nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin-top: 10px;
+}
+.top .container h2 {
+  margin-left: 10px;
+}
+.top .container .nav ul {
+  display: flex;
+  list-style: none;
+}
+.top .container .nav ul li {
+  margin-left: 10px;
+}
+.top .container .nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.top .container .nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.312);
+}
+.top .container .nav .search {
+  position: absolute;
+  right: 0;
+}
+.top .container h1 {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  font-weight: lighter;
+}
+
+/* end top  */
+
+/* start landing */
+.landing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.landing .container .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px 20px;
+}
+.landing .container .products .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: rgba(231, 222, 222, 0.444);
+  position: relative;
+}
+.landing .container .products .silver {
+  background-color: silver;
+}
+.landing .container .products .skyblue {
+  background-color: skyblue;
+}
+.landing .container .products .peach {
+  background-color: rgb(244, 91, 96);
+}
+.landing .container .products .black {
+  background-color: black;
+}
+.landing .container .products .whiteb {
+  background-color: rgba(212, 200, 200, 0.412);
+}
+.landing .container .products .box .info h2 {
+  font-weight: lighter;
+  font-size: 30px;
+  margin: 0;
+}
+.landing .container .products .box .info .white {
+  color: white;
+}
+.landing .container .products .box .info p {
+  color: grey;
+}
+.landing .container .products .box .info label {
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  font-size: 12px;
+  color: blue;
+  margin-top: 10px;
+}
+.landing .container .products .box .info .white2 {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  margin-top: 10px;
+}
+.landing .container .grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding-top: 40px;
+}
+.landing .container .grid2 .box {
+  position: relative;
+  padding: 30px 10px;
+  text-align: center;
+  background-image: url(../images/royal-street-red-beans-6x4.webp);
+  background-size: cover;
+  color: white;
+}
+.landing .container .grid2 .box2 {
+  position: relative;
+  padding: 30px 10px;
+  text-align: center;
+  background-image: url(../images/smoked\ chicken.jpg);
+  background-size: contain;
+  color: white;
+}
+.landing .container .grid2 .box3 {
+  position: relative;
+  padding: 30px 10px;
+  text-align: center;
+  background-image: url(../images/vine\ glass.jpg);
+  background-size: cover;
+  color: white;
+}
+.landing .container .grid2 .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(165, 168, 236, 0.264);
+}
+.landing .container .grid2 .box2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(238, 63, 0, 0.29);
+}
+.landing .container .grid2 .box3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 252, 0, 0.134);
+}
+.landing .container .grid2 .box h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+}
+.landing .container .grid2 .box p {
+  line-height: 1.5;
+}
+.landing .container .grid2 .box label {
+  padding: 10px;
+  font: 14px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.landing .container .grid2 .box2 h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+}
+.landing .container .grid2 .box2 p {
+  line-height: 1.5;
+}
+.landing .container .grid2 .box2 label {
+  padding: 10px;
+  font: 14px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.landing .container .grid2 .box3 h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+}
+.landing .container .grid2 .box3 p {
+  line-height: 1.5;
+}
+.landing .container .grid2 .box3 label {
+  padding: 10px;
+  font: 14px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+/* end landing */
+
+/* start footer  */
+footer {
+  padding-top:30px;
+  padding-bottom: 30px;
+  background-color: rgb(4, 17, 4);
+}
+footer .container span {
+  display: block;
+  color: white;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+footer .container .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding-bottom: 20px;
+}
+footer .container .grid .box h2 {
+  color: white;
+  font-size: 25px;
+}
+footer .container .grid .box p {
+  color: white;
+  font-size: 13px;
+  line-height: 1.5;
+}
+footer .container .grid .box ul {
+  list-style: none;
+  color: grey;
+  padding-left: 0;
+}
+footer .container .grid .box ul li {
+  font-size: 13px;
+  color: white;
+  padding: 5px;
+}
+footer .container .grid .box h5 {
+  color: grey;
+}
+footer .container .last-line {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .last-line span {
+  color: grey;
+}
+footer .container .last-line .last {
+  display: flex;
+}
+footer .container .last-line .last span {
+  color: white;
+  margin-left: 20px;
+}
+/* end footer  */
+
+@media (max-width: 767px) {
+  .top .container .top-line span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .top .container .top-line {
+    flex-direction: column;
+  }
+  .top .container .top-line .icons {
+    margin-top: 10px;
+  }
+  .top .container .nav {
+    flex-direction: column;
+    margin-top : 20px;    
+  }
+  .top .container .nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    margin-top: -10px;  
+  }
+  .top .container .nav ul li {
+    margin: 0;
+  }
+  .top .container .nav ul li a {
+    padding-left: 0;
+  }
+  .top .container .nav .search {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .top .container .nav {
+    flex-direction: column;
+    margin-top : 20px;    
+  }
+  .top .container .nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    margin-top: -10px;  
+  }
+  .top .container .nav ul li {
+    margin: 0;
+  }
+  .top .container .nav ul li a {
+    padding-left: 0;
+  }
+  .top .container .nav .search {
+    display: none;
+  }
+  .landing .container .products {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .landing .container .products .box {
+    padding-bottom: 20px;
+  }
+  .landing .container .products .box .info h2 {
+    font-size: 20px;
+  }
+  .landing .container .products .box .info p {
+    font-size: 15px;
+  }
+  .landing .container .products .box img {
+    width: 150px;
+  }
+  .landing .container .products .box .info label {
+    font-size: 12px;
+  }
+  footer .container .grid .box p {
+    max-width: 250px;
+  }
+  footer .container .last-line {
+    flex-direction: column;
+  }
+  footer .container .last-line .last span{
+    margin-left: 10px;
+  }
+}
+
